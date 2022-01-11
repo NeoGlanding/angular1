@@ -1,0 +1,5 @@
+<div>
+    <input [(ngModel)]="name" type="text" />
+    <button (click)="clickShowName()">Add Name</button>
+    <p *ngIf="showName">{{ name }}</p>
+</div>
