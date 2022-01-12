@@ -1,7 +1,7 @@
 <div>
     <input [(ngModel)]="name" type="text" />
     <button (click)="clickShowName()">Add Name</button>
-    <p *ngIf="showName; else noName">{{ name }}</p>
+    <p [ngStyle]="{backgroundColor: getColor()}" *ngIf="showName; else noName">{{ name }}</p>
     <ng-template #noName>
         <p>No name was Added</p>
     </ng-template>

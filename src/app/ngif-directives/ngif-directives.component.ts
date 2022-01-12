@@ -17,6 +17,10 @@ export class NgifDirectivesComponent implements OnInit {
     this.showName = true
   }
 
+  getColor() {
+    return 'blue'
+  }
+
   constructor() { }
 
   ngOnInit(): void {
