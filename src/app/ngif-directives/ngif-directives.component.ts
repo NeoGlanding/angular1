@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class NgifDirectivesComponent implements OnInit {
   name: string = ''
   showName: boolean = false;
+  serverOnline: boolean = false;
 
   onChangeInput(e: any) {
     this.name = e.target.value;
@@ -19,6 +20,10 @@ export class NgifDirectivesComponent implements OnInit {
 
   getColor() {
     return 'blue'
+  }
+
+  onlineServer() {
+    this.serverOnline = true;
   }
 
   constructor() { }

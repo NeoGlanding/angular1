@@ -6,3 +6,5 @@
         <p>No name was Added</p>
     </ng-template>
 </div>
+<p>Server is {{ serverOnline ? 'Online' : 'Offline' }}</p>
+<button (click)="onlineServer()" [disabled]="serverOnline">Run Server</button>
