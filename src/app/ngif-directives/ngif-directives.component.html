@@ -9,4 +9,4 @@
 <p>Server is {{ serverOnline ? 'Online' : 'Offline' }}</p>
 <button (click)="onlineServer()" [ngClass]="{testclass: !serverOnline}" [disabled]="serverOnline">Run Server</button>
 <button (click)="addSrv()">Add srv</button>
-<app-for-component *ngFor="let sr of src"></app-for-component>
+<app-for-component *ngFor="let sr of src; let i = index"></app-for-component>
