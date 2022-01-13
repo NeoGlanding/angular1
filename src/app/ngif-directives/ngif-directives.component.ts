@@ -10,6 +10,8 @@ export class NgifDirectivesComponent implements OnInit {
   showName: boolean = false;
   serverOnline: boolean = false;
 
+  src: string[] = ['Hello']
+
   onChangeInput(e: any) {
     this.name = e.target.value;
   }
@@ -24,6 +26,10 @@ export class NgifDirectivesComponent implements OnInit {
 
   onlineServer() {
     this.serverOnline = true;
+  }
+
+  addSrv() {
+    this.src.push('Jock')
   }
 
   constructor() { }
